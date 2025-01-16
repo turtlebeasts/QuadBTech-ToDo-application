@@ -94,9 +94,14 @@ src/
 
 ---
 
-## Future Enhancements
+## Screenshots
 
-- Add support for localStorage or a backend database for long-term persistence.
-- Implement user authentication for personalized task management.
-- Add notifications for reminders.
-- Introduce drag-and-drop reordering of tasks.
+Add screenshots of your application to showcase its features. For example:
+
+Task List in Light Mode
+
+![Light Mode](lightmode.png)
+
+Task List in Dark Mode
+
+![Dark Mode](darkmode.png)
