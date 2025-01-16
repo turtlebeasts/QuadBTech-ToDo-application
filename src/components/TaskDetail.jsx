@@ -1,7 +1,14 @@
-import { Box, Checkbox, IconButton, Typography } from "@mui/material";
+import {
+  Box,
+  Breadcrumbs,
+  Checkbox,
+  IconButton,
+  Typography,
+} from "@mui/material";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 import StarIcon from "@mui/icons-material/Star";
 import DeleteIcon from "@mui/icons-material/Delete";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 export default function TaskDetail({
   task,
@@ -9,6 +16,7 @@ export default function TaskDetail({
   toggleImportant,
   deleteTask,
 }) {
+  console.log(deleteTask);
   return (
     <Box
       sx={{
@@ -37,6 +45,18 @@ export default function TaskDetail({
           <Typography sx={{ fontSize: 12, fontWeight: 700 }}>
             {task.dueDate}
           </Typography>
+          {task.steps.length > 0 ? (
+            <Breadcrumbs
+              separator={<NavigateNextIcon fontSize="small" />}
+              aria-label="breadcrumb"
+            >
+              {task.steps.map((item, key) => (
+                <Typography key={key}>{item}</Typography>
+              ))}
+            </Breadcrumbs>
+          ) : (
+            ""
+          )}
         </Box>
       </Box>
       <Box sx={{ display: "flex" }}>

@@ -40,6 +40,7 @@ const TaskList = () => {
   };
 
   const deleteTask = (id) => {
+    console.log(id);
     if (id) {
       dispatch({
         type: "DELETE_TASK",
@@ -71,13 +72,14 @@ const TaskList = () => {
                       task={task}
                       toggleComplete={toggleComplete}
                       toggleImportant={toggleImportant}
+                      deleteTask={deleteTask}
                     />
                   </ListItem>
                 )
             )
           ) : (
             <Typography textAlign="center">
-              No filteredTasks available.
+              No filtered tasks available.
             </Typography>
           )}
         </List>
