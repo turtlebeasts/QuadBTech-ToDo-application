@@ -62,13 +62,13 @@ src/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-repo/task-management-app.git
+   git clone https://turtlebeasts/QuadBTech-ToDo-application.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd task-management-app
+   cd QuadBTech-ToDo-application
    ```
 
 3. Install dependencies:
