@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Task Management App is a React-based application designed to help users efficiently manage their tasks. It features a user-friendly interface with Material-UI components, allowing users to add, update, delete, and filter tasks. The app supports persistent state through sessionStorage, ensuring that tasks remain available even after page reloads.
+The QUADB-tech TODO-application is a React-based application designed to help users efficiently manage their tasks. It features a user-friendly interface with Material-UI components, allowing users to add, update, delete, and filter tasks. The app supports persistent state through sessionStorage, ensuring that tasks remain available even after page reloads.
 
 ---
 
